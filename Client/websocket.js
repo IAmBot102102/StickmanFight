@@ -1,8 +1,8 @@
-let websocket = new WebSocket("wss://10.37.110.140:3030");
-websocket.onopen = function(event){
-    websocket.send("dasfdsafdsa");
-    console.log("dasfdsafdsa");
+// Basically the websocket backend.
+// We can use these variables in the script.
+let websocket = new WebSocket("ws://10.37.110.240:3030");
+websocket.onopen = function(event) {
 };
-websocket.onmessage = function(event){
-    console.log(event.data);
+websocket.onmessage = function(event) {
+
 };
